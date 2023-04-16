@@ -1,0 +1,43 @@
+{
+    "name": "yesccx/laravel-db-query",
+    "type": "library",
+    "description": "Laravel db query",
+    "keywords": [
+        "laravel",
+        "mysql",
+        "db query",
+        "yesccx"
+    ],
+    "homepage": "https://github.com/yesccx/laravel-db-query",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yesccx\\DBQuery\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yesccx",
+            "email": "yes.ccx@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1.0",
+        "laravel/framework": "^9.0"
+    },
+    "require-dev": {
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yesccx\\DBQuery\\DBQueryProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
