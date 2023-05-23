@@ -93,6 +93,16 @@ class DBQuery implements DBQueryContract
     }
 
     /**
+     * Get Client
+     *
+     * @return ConnectionInterface
+     */
+    public function getConnection(): ConnectionInterface
+    {
+        return $this->client;
+    }
+
+    /**
      * Proxy Queries
      *
      * @param string $method
