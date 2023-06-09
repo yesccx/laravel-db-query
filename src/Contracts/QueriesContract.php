@@ -18,11 +18,25 @@ interface QueriesContract
     public function get(): Collection;
 
     /**
+     * Get Statement
+     *
+     * @return QueryWrapper
+     */
+    public function getStatement(): QueryWrapper;
+
+    /**
      * Set Statement
      *
      * @param QueryWrapper $statement
      */
     public function setStatement(QueryWrapper $statement);
+
+    /**
+     * Get Client
+     *
+     * @return ConnectionInterface
+     */
+    public function getClient(): ConnectionInterface;
 
     /**
      * Set Client

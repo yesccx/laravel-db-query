@@ -40,7 +40,7 @@ class Queries implements QueriesContract
     }
 
     /**
-     * Set statement
+     * Set Statement
      *
      * @param QueryWrapper $statement
      *
@@ -51,6 +51,16 @@ class Queries implements QueriesContract
         $this->statement = $statement;
 
         return $this;
+    }
+
+    /**
+     * Get Statement
+     *
+     * @return QueryWrapper
+     */
+    public function getStatement(): QueryWrapper
+    {
+        return $this->statement;
     }
 
     /**
@@ -65,6 +75,16 @@ class Queries implements QueriesContract
         $this->client = $client;
 
         return $this;
+    }
+
+    /**
+     * Get client
+     *
+     * @return ConnectionInterface
+     */
+    public function getClient(): ConnectionInterface
+    {
+        return $this->client;
     }
 
     /**
