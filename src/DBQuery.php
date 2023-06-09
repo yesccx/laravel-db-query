@@ -103,6 +103,37 @@ class DBQuery implements DBQueryContract
     }
 
     /**
+     * Set Client
+     *
+     * @return ConnectionInterface
+     */
+    public function setConnection(ConnectionInterface $client): void
+    {
+        $this->client = $client;
+    }
+
+    /**
+     * Get Queries
+     *
+     * @return QueriesContract
+     */
+    public function getQueries(): QueriesContract
+    {
+        return $this->queries;
+    }
+
+    /**
+     * Set Queries
+     *
+     * @param QueriesContract $queries
+     * @return void
+     */
+    public function setQueries(QueriesContract $queries): void
+    {
+        $this->queries = $queries;
+    }
+
+    /**
      * Proxy Queries
      *
      * @param string $method
